@@ -69,7 +69,7 @@ $getBonuses = (
 		$pattern = "#<p(?:style=\"\"|)><strong(?:style=\"\"|)>(.*?)<\/strong><\/p>#i";
 		$browser->go_back();
 		$browser->wait_js();
-		return $get($pattern, true);	
+		return json_encode($get($pattern, true));	
 	}
 );
 
@@ -123,7 +123,8 @@ $getData = function($task) use(&$getName, &$getLogo_url, &$getOverview_text, &$g
 $grab = (function($url, $task, $table_name) use(&$browser, $getData, $casinoInsert) {
 	$browser->navigate($url);
 	$browser->wait_js();
-	$casinoInsert($getData($task), $table_name);
+	$data = $getData($task);
+	$casinoInsert($data, $table_name);
 });
 
 
