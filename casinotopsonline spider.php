@@ -22,7 +22,7 @@ $crawledLinks = $linksCrawler($startUrl, $linksParam);
 include("casinotopsonline_grab_vars.php");
 
 $task = ['name', 'logo_url', 'overview_text', 'software', 'website', 'languages', 'deposit_methods', 'year', 'bonuses'];
-var_dump($crawledLinks);
+
 foreach($crawledLinks as $url) {
 	$grab($url, $task, $table_name);
 }
