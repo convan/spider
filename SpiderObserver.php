@@ -1,6 +1,6 @@
 <?php
 
-namespace XWEB\Spider;
+namespace Spider;
 
 use XWEB\DOM as DOM;
 use XWEB\WEB as WEB;
