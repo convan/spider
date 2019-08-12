@@ -1,6 +1,6 @@
 <?php
 
-namespace XWEB\Spider;
+namespace Spider;
 
 class SpiderProfile {
 	protected $sameDomain;
