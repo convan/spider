@@ -2,7 +2,7 @@
 
 namespace Spider;
 
-use XWEB\DOM as DOM;
+use XWEB\WEB as WEB;
 
 class Spider {
 	protected $urls;
