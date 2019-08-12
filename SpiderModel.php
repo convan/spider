@@ -42,12 +42,9 @@ class SpiderModel {
 		$data = $spider->crawl();
 		
 		foreach($data as $key => $value) {
-			//if (property_exists($model, $key)) {
-				$model->$key = $value;
-			//}
+			$model->$key = $value;
 		}
 
-		var_dump($model);
-		//$model->save();
+		$model->save();
 	}
 }
