@@ -1,8 +1,6 @@
 <?php
 
-namespace XWEB;
-
-use XWEB\Spider as Spider;
+namespace Spider;
 
 class SpiderModel {
 	protected $spider;
