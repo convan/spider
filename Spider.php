@@ -1,9 +1,8 @@
 <?php
 
-namespace XWEB;
+namespace Spider;
 
-use XWEB\Spider\SpiderProfile as SpiderProfile;
-use XWEB\Spider\SpiderObserver as SpiderObserver;
+use XWEB\DOM as DOM;
 
 class Spider {
 	protected $urls;
